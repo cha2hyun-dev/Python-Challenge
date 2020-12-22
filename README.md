@@ -1,1 +1,1 @@
-nomad python challenge for 2weeks
+노마드 파이썬 챌린지 7기 (2주)
