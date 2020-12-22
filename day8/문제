@@ -1,0 +1,34 @@
+지난 과제 정답
+오늘의 강의: 파이썬으로 웹 스크래퍼 만들기 4.1 - 4.6
+오늘의 과제: 위의 강의를 시청하신 후, 아래 코드 챌린지를 제출하세요.
+제출기간: 2일 챌린지 입니다! 목요일 오전 6시까지 제출하세요!
+
+
+Challenge goals:
+Using this boilerplate we are going to build a mini clone of the Hacker News Website using the Hacker News Search API and Flask.
+해커뉴스 API와 Flask를 활용하여 해커뉴스 웹사이트 클론코딩을 진행합니다. 
+https://news.ycombinator.com/
+https://hn.algolia.com/api
+위의 힌트 (Clues)를 활용하여, 필요조건 (Requirements) 에 맞추어 과제를 완수하세요.
+최종 결과 모습을 참고하세요.
+https://uniformlinednature.serranoarevalo.repl.co/
+The website should have the following routes:
+/
+/?order_by=new
+/?order_by=popular
+/＜id＞
+
+
+조건
+Implement a fake DB like the one we make on the video #4.6 so 'new' and 'popular' can load faster.
+The template should reflect the current order_by selection.
+The main page "/" should by default order_by popular
+There should be a link to each of the stories to go and see the comments.
+
+
+
+힌트
+If a comment does not have an author it means it has been deleted.
+To render the comment text, use the safe tag from Flask. (https://flask.palletsprojects.com/en/1.1.x/templating/#controlling-autoescaping)
+Don't worry about the CSS, I have included a .css file on the boilerplate that will style the default HTML elements, just use <header> <section> <div><h1> etc and it will automatically look nice. (https://andybrewer.github.io/mvp/)
+The API has a limit of 10,000 requests per hour so don't go crazy and you will be alright.
